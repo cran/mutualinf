@@ -1,4 +1,4 @@
-2acbf016aae3d3614b6ee3e941cbc4c0 *DESCRIPTION
+1a0eb6178d4fc1b2d81e730ab5f477fc *DESCRIPTION
 5d39647482842f29165208764f6729a4 *NAMESPACE
 79112bc343c47642d7a5419ade38dfeb *R/Data_Source.R
 5b5c324d5bd61118eb098b3d81186540 *R/M.R
@@ -9,10 +9,10 @@ aad393ac8360b099444d99191279d2c0 *R/get_general_contribution.R
 02c9159bab8b08e656d3ee07f9cec3e1 *R/get_internal_data.R
 2bf9f54f75a2907b85a6aca23edfa7b7 *R/get_proportion.R
 f471a4aeaff4e603b1f28af0cf2bfeef *R/globals.R
-b57eb25176fed20b54d986713707b1eb *R/mutual.R
+f65d7d9821f957e408937def6325d59f *R/mutual.R
 de532482f17a3cd7d89c9b0f73ea697e *R/prepare_data.R
 d5cab4d68468657b2aad32efbda538fb *README.md
-c97fb7fbd9009f03abfe4b23e2ddb403 *build/partial.rdb
+5208d1120c3b738ee404be52c90951e3 *build/partial.rdb
 cc9d2bfc5ecd77c3845d3d4912da0d7f *data/DF_Seg_Chile.rda
 196ccf99646327a5ec1e1470ff9b5713 *data/DT_Seg_Chile.rda
 185579ca000f669084629e97a772fe81 *data/DT_test.rda

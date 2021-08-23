@@ -1,7 +1,7 @@
 Package: mutualinf
 Type: Package
 Title: Computation and Decomposition of the Mutual Information Index
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(person("Rafael", "Fuentealba-Chaura", email = "rfuentealba@inf.uct.cl", role = c("aut", "cre")),
               person("Ricardo", "Mora", email = "ricmora@eco.uc3m.es", role = "aut"),
               person("Julio", "Rojas-Mora", email = "jrojas@inf.uct.cl", role = "aut"),
@@ -32,7 +32,7 @@ Collate: 'Data_Source.R' 'get_general_contribution.R'
         'mutual.R' 'get_contribution.R' 'M_value.R' 'M.R' 'globals.R'
         'prepare_data.R'
 NeedsCompilation: no
-Packaged: 2021-08-15 23:28:21 UTC; rafael
+Packaged: 2021-08-22 20:09:59 UTC; rafael
 Author: Rafael Fuentealba-Chaura [aut, cre],
   Ricardo Mora [aut],
   Julio Rojas-Mora [aut],
@@ -40,4 +40,4 @@ Author: Rafael Fuentealba-Chaura [aut, cre],
   UCT VIP Project FEQUIP2019-INRN-03 [fnd]
 Maintainer: Rafael Fuentealba-Chaura <rfuentealba@inf.uct.cl>
 Repository: CRAN
-Date/Publication: 2021-08-16 04:10:02 UTC
+Date/Publication: 2021-08-23 06:40:07 UTC
