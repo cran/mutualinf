@@ -29,12 +29,11 @@ The package allows for:
   sources defined either by group or unit characteristics.
 - The computation of all the elements that conform the “within” term in
   the decomposition.
-- Fast computation employing more than one CPU core in Mac, Linux, Unix,
-  and BSD systems. This option uses the
+- Fast computation employing more than one CPU core in Mac, Linux,
+  Windows, Unix, and BSD systems. This option uses the
   [`data.table`](https://CRAN.R-project.org/package=data.table) and
   [`parallel`](https://stat.ethz.ch/R-manual/R-devel/library/parallel/doc/parallel.pdf)
-  libraries (which Windows does not permit to run with more than one CPU
-  core).
+  libraries.
 
 ## Authors
 
@@ -44,6 +43,13 @@ Universidad Católica de Temuco
 Rudecindo Ortega 02351  
 Temuco, Chile  
 <rafael.fuentealba97@gmail.com>
+
+**Cristian Angulo-Gonzalez**  
+School of Computer Science  
+Universidad Católica de Temuco  
+Rudecindo Ortega 02351  
+Temuco, Chile  
+<cristian_world@hotmail.cl>
 
 **Ricardo Mora**  
 Department of Economics  
@@ -157,6 +163,7 @@ mutual(data = DT_Seg_Chile,
        group = "csep", 
        unit = "school")
 #>            M
+#>        <num>
 #> 1: 0.1995499
 ```
 
@@ -167,6 +174,7 @@ mutual(data = DT_Seg_Chile,
        group = "ethnicity", 
        unit = "school")
 #>             M
+#>         <num>
 #> 1: 0.06213906
 ```
 
@@ -178,6 +186,7 @@ mutual(data = DT_Seg_Chile,
        group = c("csep", "ethnicity"), 
        unit = "school")
 #>            M
+#>        <num>
 #> 1: 0.2610338
 ```
 
@@ -196,6 +205,7 @@ mutual(data = DT_Seg_Chile,
        group = c("csep", "ethnicity"), 
        unit = c("school", "district"))
 #>            M
+#>        <num>
 #> 1: 0.2610338
 ```
 
@@ -217,6 +227,7 @@ or public):
         group = c("csep", "ethnicity"), 
         unit = c("school", "sch_type"))
 #>            M
+#>        <num>
 #> 1: 0.2610865
 ```
 
@@ -236,6 +247,7 @@ segregation for each of the three regions in a single command:
         unit = c("school", "sch_type"), 
         by = "region")
 #>          region         M
+#>          <fctr>     <num>
 #> 1:       Biobio 0.2312423
 #> 2: La Araucania 0.2367493
 #> 3:     Los Rios 0.2125013
@@ -255,6 +267,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        within = "csep")
 #>          region         M  M_B_csep   M_W_csep
+#>          <fctr>     <num>     <num>      <num>
 #> 1:       Biobio 0.2312423 0.2030819 0.02816039
 #> 2: La Araucania 0.2367493 0.1906641 0.04608521
 #> 3:     Los Rios 0.2125013 0.1774420 0.03505928
@@ -282,6 +295,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        within = "ethnicity")
 #>          region         M M_B_ethnicity M_W_ethnicity
+#>          <fctr>     <num>         <num>         <num>
 #> 1:       Biobio 0.2312423    0.02582674     0.2054156
 #> 2: La Araucania 0.2367493    0.04840892     0.1883404
 #> 3:     Los Rios 0.2125013    0.03324738     0.1792539
@@ -302,6 +316,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        contribution.from = "group_vars")
 #>          region         M    C_csep C_ethnicity  interaction
+#>          <fctr>     <num>     <num>       <num>        <num>
 #> 1:       Biobio 0.2312423 0.2054156  0.02816039 -0.002333648
 #> 2: La Araucania 0.2367493 0.1883404  0.04608521  0.002323710
 #> 3:     Los Rios 0.2125013 0.1792539  0.03505928 -0.001811897
@@ -330,6 +345,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        contribution.from = "csep")
 #>          region         M    C_csep
+#>          <fctr>     <num>     <num>
 #> 1:       Biobio 0.2312423 0.2054156
 #> 2: La Araucania 0.2367493 0.1883404
 #> 3:     Los Rios 0.2125013 0.1792539
@@ -347,6 +363,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        contribution.from = "unit_vars")
 #>          region         M  C_school   C_sch_type interaction
+#>          <fctr>     <num>     <num>        <num>       <num>
 #> 1:       Biobio 0.2312423 0.1293566 4.860549e-05  0.10183706
 #> 2: La Araucania 0.2367493 0.1709480 8.563946e-06  0.06579272
 #> 3:     Los Rios 0.2125013 0.1351602 1.903942e-04  0.07715072
@@ -372,6 +389,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        contribution.from = "unit_vars")
 #>          region         M  C_school C_district interaction
+#>          <fctr>     <num>     <num>      <num>       <num>
 #> 1:       Biobio 0.2311937 0.1558457          0  0.07534802
 #> 2: La Araucania 0.2367407 0.1635589          0  0.07318187
 #> 3:     Los Rios 0.2123109 0.1605696          0  0.05174127
@@ -393,6 +411,7 @@ mutual(data = DT_Seg_Chile,
        by = "region", 
        contribution.from = "group_vars")
 #>          region         M    C_csep C_ethnicity   C_gender interaction
+#>          <fctr>     <num>     <num>       <num>      <num>       <num>
 #> 1:       Biobio 0.2731123 0.2143102  0.03438802 0.04191863 -0.01750455
 #> 2: La Araucania 0.2718037 0.2017662  0.05742349 0.03506293 -0.02244892
 #> 3:     Los Rios 0.2836338 0.1941962  0.04642725 0.07132289 -0.02831253
