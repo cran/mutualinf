@@ -1,8 +1,8 @@
 Package: mutualinf
 Type: Package
 Title: Computation and Decomposition of the Mutual Information Index
-Version: 2.0.1
-Date: 2025-01-13
+Version: 2.0.2
+Date: 2025-01-18
 Authors@R: c(person("Cristian", "Angulo-Gonzalez", email = "cristian_world@hotmail.cl", role = c("aut", "cre")),
               person("Rafael", "Fuentealba-Chaura", email = "rafael.fuentealba97@gmail.com", role = "aut"),
               person("Ricardo", "Mora", email = "ricmora@eco.uc3m.es", role = "aut"),
@@ -36,7 +36,7 @@ Collate: 'Data_Source.R' 'get_internal_data.R'
         'get_proportion.R' 'M_within.R' 'M_within_inv.R' 'mutual.R'
         'M_value.R' 'M.R' 'globals.R' 'prepare_data.R' 'RcppExports.R'
 NeedsCompilation: yes
-Packaged: 2025-01-16 15:27:27 UTC; crist
+Packaged: 2025-01-18 19:38:10 UTC; crist
 Author: Cristian Angulo-Gonzalez [aut, cre],
   Rafael Fuentealba-Chaura [aut],
   Ricardo Mora [aut],
@@ -45,4 +45,4 @@ Author: Cristian Angulo-Gonzalez [aut, cre],
   MCIN/AEI/10.13039/501100011033 (Project no. PID2019-108576RB-I00) [fnd],
   UCT VIP Project FEQUIP2019-INRN-03 [fnd]
 Repository: CRAN
-Date/Publication: 2025-01-16 17:20:01 UTC
+Date/Publication: 2025-01-18 22:10:02 UTC

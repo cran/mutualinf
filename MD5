@@ -1,4 +1,4 @@
-6083351e5eb8a543998bae7dc81eda24 *DESCRIPTION
+465020d4b55db85381c4a6b4a8c850e5 *DESCRIPTION
 d6903a0b7986d0ee0d763d41e29845be *NAMESPACE
 f719a1389d87d1e04f34d140da452f70 *R/Data_Source.R
 1f90efef5f80e9453a8c7c60b6e24711 *R/M.R
@@ -6,7 +6,7 @@ f719a1389d87d1e04f34d140da452f70 *R/Data_Source.R
 8ac730f69e30df02cdace9c787a52f7f *R/M_within.R
 39b03047190b479a60f25eef413bb45c *R/M_within_inv.R
 d70519c09abe11519ba5ecf268b76c2d *R/RcppExports.R
-6c0a8154a24210129d51ba1df8deb6e4 *R/get_contribution.R
+431fea937bc924f70fba38e7963f82fb *R/get_contribution.R
 c3185ca1dd1da2ed243257483b5d88a2 *R/get_general_contribution.R
 9f40a18aa29653153716a471af831834 *R/get_internal_data.R
 7507fda8145dd3a7054d6a6fb7591d20 *R/get_proportion.R
@@ -32,7 +32,7 @@ f5145e567972a335dc6eafc06310ad9f *src/M_within_inv_with_gid.cpp
 b86cba44003b7e38e6196f5fefe8b264 *src/Makevars
 b86cba44003b7e38e6196f5fefe8b264 *src/Makevars.win
 df80a48578b9b634320a63744aee5565 *src/RcppExports.cpp
-4418bbcbf14162247d08d97146398375 *src/VectorHash.h
+aaa37aed0c4dfc891bb1370d28a358bf *src/VectorHash.h
 f62be3cfff0cb59375e8c4c1eaee83df *src/compute_index_within.cpp
 8a7eb3003f8118ddce50973efe295e9c *src/compute_index_within.h
 34a5983f3387f5cc268a9f3f393e39c1 *src/get_internal_data_cpp.cpp
