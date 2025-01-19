@@ -1,8 +1,8 @@
 Package: mutualinf
 Type: Package
 Title: Computation and Decomposition of the Mutual Information Index
-Version: 2.0.2
-Date: 2025-01-18
+Version: 2.0.3
+Date: 2025-01-19
 Authors@R: c(person("Cristian", "Angulo-Gonzalez", email = "cristian_world@hotmail.cl", role = c("aut", "cre")),
               person("Rafael", "Fuentealba-Chaura", email = "rafael.fuentealba97@gmail.com", role = "aut"),
               person("Ricardo", "Mora", email = "ricmora@eco.uc3m.es", role = "aut"),
@@ -31,12 +31,13 @@ LazyData: true
 URL: https://github.com/RafaelFuentealbaC/mutualinf
 BugReports: https://github.com/RafaelFuentealbaC/mutualinf/issues
 Depends: R (>= 2.10)
-Collate: 'Data_Source.R' 'get_internal_data.R'
-        'get_general_contribution.R' 'get_contribution.R'
-        'get_proportion.R' 'M_within.R' 'M_within_inv.R' 'mutual.R'
-        'M_value.R' 'M.R' 'globals.R' 'prepare_data.R' 'RcppExports.R'
+Collate: 'Data_Source.R' 'get_internal_data.R' 'get_contribution.R'
+        'M_value.R' 'M.R' 'get_general_contribution.R'
+        'get_proportion.R' 'M_within.R' 'M_within_inv.R'
+        'RcppExports.R' 'globals.R' 'mutual.R' 'prepare_data.R'
+RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2025-01-18 19:38:10 UTC; crist
+Packaged: 2025-01-19 06:52:30 UTC; crist
 Author: Cristian Angulo-Gonzalez [aut, cre],
   Rafael Fuentealba-Chaura [aut],
   Ricardo Mora [aut],
@@ -45,4 +46,4 @@ Author: Cristian Angulo-Gonzalez [aut, cre],
   MCIN/AEI/10.13039/501100011033 (Project no. PID2019-108576RB-I00) [fnd],
   UCT VIP Project FEQUIP2019-INRN-03 [fnd]
 Repository: CRAN
-Date/Publication: 2025-01-18 22:10:02 UTC
+Date/Publication: 2025-01-19 09:50:01 UTC
